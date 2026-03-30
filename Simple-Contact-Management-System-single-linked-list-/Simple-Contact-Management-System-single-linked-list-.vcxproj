@@ -130,7 +130,10 @@
     <ClCompile Include="Simple-Contact-Management-System-single-linked-list-.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="clsLinkedList.h" />
+    <ClInclude Include="clsContact.h" />
+    <ClInclude Include="clsContactManager.h" />
+    <ClInclude Include="clsMainScreen.h" />
+    <ClInclude Include="clsSinglyLinkedList.h" />
     <ClInclude Include="clsNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

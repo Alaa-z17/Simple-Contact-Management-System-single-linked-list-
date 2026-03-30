@@ -54,7 +54,7 @@ public:
     }
 
     // ------------------ Find operation ------------------
-    bool find(const T& value) const {
+    bool IsFound(const T& value) const {
         Node<T>* current = _head;
         while (current) {
             if (current->data == value)
@@ -63,6 +63,17 @@ public:
         }
         return false;
     }
+    // ------------------ Find operation ------------------
+    Node<T>* Find(const T& value) const {
+        Node<T>* current = _head;
+        while (current) {
+            if (current->data == value)
+                return current;
+            current = current->next;
+        }
+        return nullptr;
+    }
+
 
     // ------------------ Delete operations ------------------
     void deleteFirst() {

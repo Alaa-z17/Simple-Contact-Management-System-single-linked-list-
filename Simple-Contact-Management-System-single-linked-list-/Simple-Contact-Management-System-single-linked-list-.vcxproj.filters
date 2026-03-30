@@ -23,7 +23,16 @@
     <ClInclude Include="clsNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="clsLinkedList.h">
+    <ClInclude Include="clsSinglyLinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsContact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsContactManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMainScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

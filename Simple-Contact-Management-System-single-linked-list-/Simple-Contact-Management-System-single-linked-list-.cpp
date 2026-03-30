@@ -1,8 +1,8 @@
-
-
 #include <iostream>
+#include"clsMainScreen.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	clsContactManager <clsContact>SystemManager;
+    clsMainScreen::ShowMainLayout(SystemManager);
 }

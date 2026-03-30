@@ -1,11 +1,13 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "clsSinglyLinkedList.h" // Ensure this matches your file name
+#include "clsSinglyLinkedList.h" 
 #include "clsContact.h"
+#include "clsNode.h"
 
 using namespace std;
 
+template <typename T>
 class clsContactManager {
 private:
     // LinkedList to store Contact objects
@@ -20,6 +22,7 @@ public:
 
     // Deletes a contact using its Unique ID
     bool DeleteContact(int ID) {
+
         // Create a temporary object with the target ID for comparison
         clsContact TempContact(ID, "", "");
         return _ContactList.deleteByValue(TempContact);
@@ -28,7 +31,13 @@ public:
     // Searches for a contact by ID
     bool SearchContact(int ID) {
         clsContact TempContact(ID, "", "");
-        return _ContactList.find(TempContact);
+        return _ContactList.IsFound(TempContact);
+    }
+
+    // Finds for a contact by ID
+    Node<clsContact> *FindContact(int ID) {
+        clsContact TempContact(ID,"","");
+        return _ContactList.Find(TempContact);
     }
 
     // Updates a contact's phone number based on ID
@@ -49,6 +58,15 @@ public:
         }
     }
 
+	// Prints contact by ID
+    void PrintContact(int ID) {
+        if (_ContactList.isEmpty()) {
+            cout << "\n\t\t\t--- No Contacts Available ---\n";
+        }
+        else {
+			SearchContact(ID) ? cout << "\nContact Found: " << clsContact(ID, "", "") : cout << "\nContact Not Found."; 
+        }
+    }
     // Returns the total number of contacts
     int TotalContacts() {
         return _ContactList.size();
