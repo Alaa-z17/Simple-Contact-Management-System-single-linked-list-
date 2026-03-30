@@ -1,0 +1,51 @@
+# =======================================================================
+# Visual Studio Files to Ignore (C++ Projects)
+# =======================================================================
+
+# User-specific files (configurations and layouts)
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache/options directory (Hidden folder)
+.vs/
+
+# Build results (Executables and intermediate files)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Intermediate files (Object files, logs, etc.)
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.idb
+*.lastbuildstate
+*.recipe
+*.log
+*.ipch
+
+# Executables and Libraries
+*.exe
+*.dll
+*.so
+*.out
+*.app
+
+# C++ Precompiled headers
+*.gch
+*.pch
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.temp
+
+# =======================================================================
+# End of Visual Studio .gitignore
+# =======================================================================
